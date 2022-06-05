@@ -1,0 +1,512 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/1/s/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.ConfirmEmailPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.ConfirmEmailPage.html",
+          "hash": "o5fARxaNwfwmkXmHt8CNdX7JwxnaGuv5tPNVFs2nFiE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginPage.html",
+          "hash": "6yEoHr3m2W0G/dyW7HbKzBl+SGcf2mw163RdTk1AsM8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginWith2faPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginWith2faPage.html",
+          "hash": "uH7DU/Wc1C5TysVzXjVaGkgTNRXh/YR6zBEH8unK5Go="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginWithRecoveryCodePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginWithRecoveryCodePage.html",
+          "hash": "ZkFiIUDpCuqk0CaG3dK94Ps7S/pt840yx1FJ6q/zLt8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.RegisterPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.RegisterPage.html",
+          "hash": "BROoxvNJa2TcFBtacPNrQuHE3tJBww405CqUcxqOsKs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.html",
+          "hash": "/y1In2df+e6zD9D5Y8oercOv0GpDYy5sZp0tjONKIE8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider-1.html",
+          "hash": "V9SjQ81Y0VsRwWYpAJh9MU5u9V9sp5TbWEPn0cUSaUU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Areas.Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Areas.Identity.html",
+          "hash": "UN3mq2UaxSajIX+KlH3rruWWu/8htKmMUoQhYRK9ybI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Constants.html",
+          "hash": "7kslmu2+/tgJJgShjF0U+szhe+xO8b9jnMjRkaIMZSE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Library.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Library.html",
+          "hash": "XnXVgvfmZ/hzLA6P+JkSRTa9elfMUrzXmvRDgSGcNuU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Models.LoginPageModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Models.LoginPageModel.html",
+          "hash": "gb8np+MlpTRmUdJqEJGzSfyuJHODlL3VC810KwHFl+U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Models.RegisterPageModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Models.RegisterPageModel.html",
+          "hash": "GyrxxXO9x2fk9uua2bQ6xf1CxT9QjO6MBjyq11JtwBU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Models.RegisterResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Models.RegisterResult.html",
+          "hash": "FTApf46gmjQN6TkqTZtoqe9QqnzpWMdKTll0EZs5yr0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Models.html",
+          "hash": "eP9xovxtiZ06GWw1OAaPRRgUaFT+rI/ITrrPZyDevBY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Options.BlazorIdentityOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Options.BlazorIdentityOptions.html",
+          "hash": "12/n0JI1OU/kgUo91TsmQ02nbShNflKCFPXBW16JjNE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Options.EndpointOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Options.EndpointOptions.html",
+          "hash": "7pIjvq+xLkn2OV6NMTHDhABq8mXenrejpG4uS/kv+Co="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Options.ThemeOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Options.ThemeOptions.html",
+          "hash": "rqRwTQAoc21sdhD+N2H0+nR/x9UB97jPW+YHAcfWfXs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Options.html",
+          "hash": "PhVTH0286v/qDQj/Z9fnjReBXUnrQiqM14HABBpo5CA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Services.BlazorIdentityManager-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Services.BlazorIdentityManager-1.html",
+          "hash": "S931iN1/ruLbTQZmAE7IYQFLNB2xfz+lmyW7dwfCRNY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Services.html",
+          "hash": "GO4C/NlsMifCnNw9fmCXVMk03PeYPM2wj8JYQ5jhSac="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Shared.RedirectToLogin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Shared.RedirectToLogin.html",
+          "hash": "FRGIeAwgAxjKXol++z2qm33DvCsWIRLpM/nMTMw0La0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Shared.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Shared.html",
+          "hash": "tvSNG3oDrLl42lw9f0ljghquALag+86uc8+j5ezvyM0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.html",
+          "hash": "xHqKfI0mGyFj5px+/ADInhnnLnK4ZwMji2XqGJEROMQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.ObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.ObjectExtensions.html",
+          "hash": "JMH76cYB1EL5honhYJ/lAUe3/FjnBpSR0ATBj2dOQu4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.html",
+          "hash": "5sB3i5Sf/oQMX4m3uirJksASQtxWT/ITRIn0xgQKOlM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.html",
+          "hash": "CYWQr0HnnOiRnvwMlGsrepzHJM8Zp6vLFYnkKkfe/3g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationExtensions.html",
+          "hash": "QLL1KHf63RRsLPe0WOS7Y5ET4u3AOcQzdFyPaoICWPs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.html",
+          "hash": "f2CA/m5OSk9E3IBze44umlACf0zxXFDSypgSTqK+9sU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "IlbMlxnRcNwlnuNiBXa53dNSjjnCao964OHwyKOiru4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "WeCZp0JRUGNn7i3AfmkrjRKHVdx2cyDSPHqon083ntg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/codegator-167x79.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/codegator-167x79.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/codegator-334x158.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/codegator-334x158.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/codegator-500x236.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/codegator-500x236.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/codegator-667x315.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/codegator-667x315.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "kzgKpkJ4XTsWtB/hcEsRugMnsqy7M2pOI7nzxwytxHU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "6N5mAXkfGLbP13r25qmPRiS47RjPobREDAwk4lAwSTs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 28,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
