@@ -122,18 +122,12 @@ type.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class WebApplicationExtensions</code></pre>
   </div>
-  <h5 id="Microsoft_AspNetCore_Builder_WebApplicationExtensions_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>
-Note, this method must be called, in the <code>Program</code> module, <strong>before</strong> the 
-<span class="xref">Microsoft.AspNetCore.Builder.WebApplicationBuilder</span> object is used to creates the <span class="xref">Microsoft.AspNetCore.Builder.WebApplication</span> 
-instance.
-</p>
-</div>
   <h3 id="methods">Methods
   </h3>
   <a id="Microsoft_AspNetCore_Builder_WebApplicationExtensions_UseBlazorIdentity_" data-uid="Microsoft.AspNetCore.Builder.WebApplicationExtensions.UseBlazorIdentity*"></a>
   <h4 id="Microsoft_AspNetCore_Builder_WebApplicationExtensions_UseBlazorIdentity__1_Microsoft_AspNetCore_Builder_WebApplication_" data-uid="Microsoft.AspNetCore.Builder.WebApplicationExtensions.UseBlazorIdentity``1(Microsoft.AspNetCore.Builder.WebApplication)">UseBlazorIdentity&lt;TUser&gt;(WebApplication)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This method adds middlewear required for the blazor identity library.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -153,7 +147,8 @@ instance.
       <tr>
         <td><span class="xref">Microsoft.AspNetCore.Builder.WebApplication</span></td>
         <td><span class="parametername">webApplication</span></td>
-        <td></td>
+        <td><p>The web application to use for the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -168,7 +163,9 @@ instance.
     <tbody>
       <tr>
         <td><span class="xref">Microsoft.AspNetCore.Builder.WebApplication</span></td>
-        <td></td>
+        <td><p>The vlaue of the <code data-dev-comment-type="paramref" class="paramref">webApplication</code> parameter,
+for chaining calls together, Fluent style.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -183,10 +180,18 @@ instance.
     <tbody>
       <tr>
         <td><span class="parametername">TUser</span></td>
-        <td></td>
+        <td><p>The type of associated user.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_AspNetCore_Builder_WebApplicationExtensions_UseBlazorIdentity__1_Microsoft_AspNetCore_Builder_WebApplication__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+Note, this method must be called, in the <code>Program</code> module, <strong>before</strong> the 
+<span class="xref">Microsoft.AspNetCore.Builder.WebApplicationBuilder</span> object is used to creates the <span class="xref">Microsoft.AspNetCore.Builder.WebApplication</span> 
+instance.
+</p>
+</div>
 </article>
           </div>
           

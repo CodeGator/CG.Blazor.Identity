@@ -313,13 +313,13 @@ references:
   fullName.vb: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider(Of TUser)
   nameWithType: RevalidatingIdentityAuthenticationStateProvider<TUser>
   nameWithType.vb: RevalidatingIdentityAuthenticationStateProvider(Of TUser)
-- uid: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider`1.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.DependencyInjection.IServiceScopeFactory,Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions})
+- uid: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider`1.#ctor(ILoggerFactory,IServiceScopeFactory,IOptions{IdentityOptions})
   name: RevalidatingIdentityAuthenticationStateProvider(ILoggerFactory, IServiceScopeFactory, IOptions<IdentityOptions>)
-  href: api/CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider-1.html#CG_Blazor_Identity_Areas_Identity_RevalidatingIdentityAuthenticationStateProvider_1__ctor_Microsoft_Extensions_Logging_ILoggerFactory_Microsoft_Extensions_DependencyInjection_IServiceScopeFactory_Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__
-  commentId: M:CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider`1.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.DependencyInjection.IServiceScopeFactory,Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions})
+  href: api/CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider-1.html#CG_Blazor_Identity_Areas_Identity_RevalidatingIdentityAuthenticationStateProvider_1__ctor_ILoggerFactory_IServiceScopeFactory_IOptions_IdentityOptions__
+  commentId: M:CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider`1.#ctor(ILoggerFactory,IServiceScopeFactory,IOptions{IdentityOptions})
   name.vb: RevalidatingIdentityAuthenticationStateProvider(ILoggerFactory, IServiceScopeFactory, IOptions(Of IdentityOptions))
-  fullName: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider<TUser>.RevalidatingIdentityAuthenticationStateProvider(Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Identity.IdentityOptions>)
-  fullName.vb: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider(Of TUser).RevalidatingIdentityAuthenticationStateProvider(Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory, Microsoft.Extensions.Options.IOptions(Of Microsoft.AspNetCore.Identity.IdentityOptions))
+  fullName: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider<TUser>.RevalidatingIdentityAuthenticationStateProvider(ILoggerFactory, IServiceScopeFactory, IOptions<IdentityOptions>)
+  fullName.vb: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider(Of TUser).RevalidatingIdentityAuthenticationStateProvider(ILoggerFactory, IServiceScopeFactory, IOptions(Of IdentityOptions))
   nameWithType: RevalidatingIdentityAuthenticationStateProvider<TUser>.RevalidatingIdentityAuthenticationStateProvider(ILoggerFactory, IServiceScopeFactory, IOptions<IdentityOptions>)
   nameWithType.vb: RevalidatingIdentityAuthenticationStateProvider(Of TUser).RevalidatingIdentityAuthenticationStateProvider(ILoggerFactory, IServiceScopeFactory, IOptions(Of IdentityOptions))
 - uid: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider`1.#ctor*
@@ -348,12 +348,12 @@ references:
   fullName.vb: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider(Of TUser).RevalidationInterval
   nameWithType: RevalidatingIdentityAuthenticationStateProvider<TUser>.RevalidationInterval
   nameWithType.vb: RevalidatingIdentityAuthenticationStateProvider(Of TUser).RevalidationInterval
-- uid: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider`1.ValidateAuthenticationStateAsync(Microsoft.AspNetCore.Components.Authorization.AuthenticationState,CancellationToken)
+- uid: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider`1.ValidateAuthenticationStateAsync(AuthenticationState,CancellationToken)
   name: ValidateAuthenticationStateAsync(AuthenticationState, CancellationToken)
-  href: api/CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider-1.html#CG_Blazor_Identity_Areas_Identity_RevalidatingIdentityAuthenticationStateProvider_1_ValidateAuthenticationStateAsync_Microsoft_AspNetCore_Components_Authorization_AuthenticationState_CancellationToken_
-  commentId: M:CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider`1.ValidateAuthenticationStateAsync(Microsoft.AspNetCore.Components.Authorization.AuthenticationState,CancellationToken)
-  fullName: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider<TUser>.ValidateAuthenticationStateAsync(Microsoft.AspNetCore.Components.Authorization.AuthenticationState, CancellationToken)
-  fullName.vb: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider(Of TUser).ValidateAuthenticationStateAsync(Microsoft.AspNetCore.Components.Authorization.AuthenticationState, CancellationToken)
+  href: api/CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider-1.html#CG_Blazor_Identity_Areas_Identity_RevalidatingIdentityAuthenticationStateProvider_1_ValidateAuthenticationStateAsync_AuthenticationState_CancellationToken_
+  commentId: M:CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider`1.ValidateAuthenticationStateAsync(AuthenticationState,CancellationToken)
+  fullName: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider<TUser>.ValidateAuthenticationStateAsync(AuthenticationState, CancellationToken)
+  fullName.vb: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider(Of TUser).ValidateAuthenticationStateAsync(AuthenticationState, CancellationToken)
   nameWithType: RevalidatingIdentityAuthenticationStateProvider<TUser>.ValidateAuthenticationStateAsync(AuthenticationState, CancellationToken)
   nameWithType.vb: RevalidatingIdentityAuthenticationStateProvider(Of TUser).ValidateAuthenticationStateAsync(AuthenticationState, CancellationToken)
 - uid: CG.Blazor.Identity.Areas.Identity.RevalidatingIdentityAuthenticationStateProvider`1.ValidateAuthenticationStateAsync*
