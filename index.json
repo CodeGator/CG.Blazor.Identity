@@ -1,0 +1,47 @@
+{
+  "api/CG.Blazor.Identity.html": {
+    "href": "api/CG.Blazor.Identity.html",
+    "title": "Namespace CG.Blazor.Identity",
+    "keywords": "Namespace CG.Blazor.Identity Classes PolicyNameDefaults This class utility contains constants related to identity policies. RoleNameDefaults This class utility contains constants related to roles."
+  },
+  "api/CG.Blazor.Identity.Options.html": {
+    "href": "api/CG.Blazor.Identity.Options.html",
+    "title": "Namespace CG.Blazor.Identity.Options",
+    "keywords": "Namespace CG.Blazor.Identity.Options Classes IdentityOptions This class contains configuration settings for identity operations."
+  },
+  "api/CG.Blazor.Identity.Options.IdentityOptions.html": {
+    "href": "api/CG.Blazor.Identity.Options.IdentityOptions.html",
+    "title": "Class IdentityOptions",
+    "keywords": "Class IdentityOptions This class contains configuration settings for identity operations. Inheritance System.Object IdentityOptions Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Blazor.Identity.Options Assembly : CG.Blazor.Identity.dll Syntax public class IdentityOptions Properties AdditionalScopes This property contains a list of additional scopes that should be required for identity purposes ('openid' and 'profile' are always required, no matter what). Declaration public List<string> AdditionalScopes { get; set; } Property Value Type Description List < System.String > Authority This property contains the URL for the identity authority. Declaration public string Authority { get; set; } Property Value Type Description System.String ClientId This property contains the client identifier. Declaration public string ClientId { get; set; } Property Value Type Description System.String ClientSecret This property contains the client secret. Declaration public string ClientSecret { get; set; } Property Value Type Description System.String CookieName This property contains the cookie name. Declaration public string CookieName { get; set; } Property Value Type Description System.String DeveloperBypass This property indicates when a developer bypass is in effect, which allows quick access to everything without requiring credentials of any kind (only works in a development environment). Declaration public bool DeveloperBypass { get; set; } Property Value Type Description System.Boolean"
+  },
+  "api/CG.Blazor.Identity.PolicyNameDefaults.html": {
+    "href": "api/CG.Blazor.Identity.PolicyNameDefaults.html",
+    "title": "Class PolicyNameDefaults",
+    "keywords": "Class PolicyNameDefaults This class utility contains constants related to identity policies. Inheritance System.Object PolicyNameDefaults Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Blazor.Identity Assembly : CG.Blazor.Identity.dll Syntax public static class PolicyNameDefaults Fields AdminPolicy This constant contains the name of a policy that requires an 'Admin' role, for authorization purposes. Declaration public const string AdminPolicy = \"AdminPolicy\" Field Value Type Description System.String StandardPolicy This constant contains the name of a policy that requires an authenticated user, for authorization purposes. Declaration public const string StandardPolicy = \"StandardPolicy\" Field Value Type Description System.String SuperAdminPolicy This constant contains the name of a policy that requires a 'SuperAdmin' role, for authorization purposes. Declaration public const string SuperAdminPolicy = \"SuperAdminPolicy\" Field Value Type Description System.String"
+  },
+  "api/CG.Blazor.Identity.RoleNameDefaults.html": {
+    "href": "api/CG.Blazor.Identity.RoleNameDefaults.html",
+    "title": "Class RoleNameDefaults",
+    "keywords": "Class RoleNameDefaults This class utility contains constants related to roles. Inheritance System.Object RoleNameDefaults Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Blazor.Identity Assembly : CG.Blazor.Identity.dll Syntax public static class RoleNameDefaults Fields Admin This constant contains the name of an 'administrator' role. Declaration public const string Admin = \"Admin\" Field Value Type Description System.String SuperAdmin This constant contains the name of a 'super administrator' role. Declaration public const string SuperAdmin = \"SuperAdmin\" Field Value Type Description System.String"
+  },
+  "api/Microsoft.AspNetCore.Builder.html": {
+    "href": "api/Microsoft.AspNetCore.Builder.html",
+    "title": "Namespace Microsoft.AspNetCore.Builder",
+    "keywords": "Namespace Microsoft.AspNetCore.Builder Classes WebApplicationBuilderExtensions006 This class contains extension methods related to the Microsoft.AspNetCore.Builder.WebApplicationBuilder type."
+  },
+  "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006.html": {
+    "href": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006.html",
+    "title": "Class WebApplicationBuilderExtensions006",
+    "keywords": "Class WebApplicationBuilderExtensions006 This class contains extension methods related to the Microsoft.AspNetCore.Builder.WebApplicationBuilder type. Inheritance System.Object WebApplicationBuilderExtensions006 Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : Microsoft.AspNetCore.Builder Assembly : CG.Blazor.Identity.dll Syntax public static class WebApplicationBuilderExtensions006 Methods AddServerSideIdentity(WebApplicationBuilder, String, Nullable<ILogger>) This method registers the most common authentication and authorization services required for a typical server-side Blazor application. Declaration public static WebApplicationBuilder AddServerSideIdentity(this WebApplicationBuilder webApplicationBuilder, string sectionName = \"Identity\", ILogger? bootstrapLogger = null) Parameters Type Name Description Microsoft.AspNetCore.Builder.WebApplicationBuilder webApplicationBuilder The web application builder to use for the operation. System.String sectionName The configuration section name to use for the operation. System.Nullable < ILogger > bootstrapLogger The optional bootstrap logger to use for the operation. Returns Type Description Microsoft.AspNetCore.Builder.WebApplicationBuilder The value of the webApplicationBuilder parameter, for chaining calls together, Fluent style"
+  },
+  "articles/intro.html": {
+    "href": "articles/intro.html",
+    "title": "Add your introductions here!",
+    "keywords": "Add your introductions here!"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Introduction",
+    "keywords": "Introduction CG.Blazor.Identity.dll contains identity extensions for the Blazor framework."
+  }
+}
