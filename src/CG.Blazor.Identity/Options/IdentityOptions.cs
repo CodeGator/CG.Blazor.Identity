@@ -22,19 +22,19 @@ public class IdentityOptions
     /// <summary>
     /// This property contains the URL for the identity authority.
     /// </summary>
-    [RequiredWhen("DeveloperBypass", Invert = true)]
+    [RequiredWhen("DeveloperBypass")]
     public string Authority { get; set; } = null!;
 
     /// <summary>
     /// This property contains the client identifier.
     /// </summary>
-    [RequiredWhen("DeveloperBypass", Invert = true)]
+    [RequiredWhen("DeveloperBypass")]
     public string ClientId { get; set; } = null!;
 
     /// <summary>
     /// This property contains the client secret.
     /// </summary>
-    [RequiredWhen("DeveloperBypass", Invert = true)]
+    [RequiredWhen("DeveloperBypass")]
     public string ClientSecret { get; set; } = null!;
 
     /// <summary>
