@@ -42,7 +42,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CG.Options" Version="2023.1.1" />
+		<PackageReference Include="CG.DataAnnotations" Version="2023.1.6" />
+		<PackageReference Include="CG.Options" Version="2023.1.2" />
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.1" />
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="7.0.1" />
 		<PackageReference Include="Nerdbank.GitVersioning" Version="3.5.119">
