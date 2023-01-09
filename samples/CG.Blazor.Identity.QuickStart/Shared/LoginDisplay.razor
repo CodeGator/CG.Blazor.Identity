@@ -1,0 +1,17 @@
+﻿@using CG.Blazor.Identity.Options;
+@using Microsoft.Extensions.Options;
+@inject IOptions<IdentityOptions> IdentityOptions
+
+@if (!IdentityOptions.Value.DeveloperBypass)
+{
+    <AuthorizeView>
+        <Authorized>
+            <form method="post" action="Account/Logout">
+                <button type="submit" class="nav-link btn btn-link">Log out</button>
+            </form>
+        </Authorized>
+        <NotAuthorized>
+            <a href="Account/Login">Log in</a>
+        </NotAuthorized>
+    </AuthorizeView>
+}

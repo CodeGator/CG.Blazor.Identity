@@ -47,130 +47,78 @@ public static class WebApplicationBuilderExtensions006
             out var identityOptions
             );
 
-        // Tell the world what we are about to do.
-        bootstrapLogger?.LogDebug(
-            "Clearing default inbound claims mapping for identity."
-            );
+        // Authentication related services will crash if any of the configuration
+        //   settings are missing, at this point. They can be missing if the 
+        //   DeveloperBypass flag is true (that's the whole point of the flag).
+        // So, we'll need to make sure we don't try to register authentication
+        //   services if the bypass flag is true.
 
-        // Clear default inbound claim mapping.
-        JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
-
-        // Tell the world what we are about to do.
-        bootstrapLogger?.LogDebug(
-            "Adding authentication and authorization services."
-            );
-
-        // Is identity bypassed?
+        // Should we bypass identity?
         if (identityOptions.DeveloperBypass)
         {
             // Is this a development environment?
             if (webApplicationBuilder.Environment.IsDevelopment())
             {
-                // Tell the world what we are about to do.
-                bootstrapLogger?.LogDebug(
-                    "Not standing up identity services because the 'DeveloperBypass' flag is true."
-                    );
+                // If we get here then the system is running in a development 
+                //   environment, and the DeveloperBypass flag is true, so 
+                //   we'll bypass the authentication services.
 
-                return webApplicationBuilder;
+                // Tell the world what we are about to do.
+                bootstrapLogger?.LogWarning(
+                    "Bypassing identity because the '{name}' flag is true.",
+                    nameof(IdentityOptions.DeveloperBypass)
+                    );
             }
             else
             {
-                // Tell what we didn't do.
+                // If we get here then the system is NOT running in a development 
+                //   environment, so we don't care about the DeveloperBypass flag,
+                //   we're going to register authentication services normally.
+
+                // Tell the world what we aren't doing.
+                bootstrapLogger?.LogWarning(
+                    "Not bypassing identity because the environment isn't 'Development'."
+                    );
+
+                // Tell the world what we are about to do.
                 bootstrapLogger?.LogDebug(
-                    "Ignoring the developer bypass because this is not a developer environment."
+                    "Adding authentication, cookies and JWT services."
+                    );
+
+                // Register the authentication services.
+                webApplicationBuilder.AddAuthenticationServices(
+                    identityOptions,
+                    bootstrapLogger
                     );
             }
         }
-
-        // Wire up the authentication, cookie, OIDC and JWT services.
-        webApplicationBuilder.Services.AddAuthentication(options =>
+        else
         {
-            options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-            options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
-            options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-        }).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
-        {
-            options.Cookie.Name = identityOptions.CookieName;
-            options.Cookie.SameSite = SameSiteMode.Strict;
-        }).AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
-        {
-            // Where our identity server is.
-            options.Authority = identityOptions.Authority; 
+            // If we get here then the DeveloperBypass flag is false, so we should
+            //   register the authentication services normally.
 
-            // Are we in a development environment?
-            if (webApplicationBuilder.Environment.IsDevelopment())
-            {
-                // Don't require HTTPS for meta-data
-                options.RequireHttpsMetadata = false;
-            }
+            // Tell the world what we are about to do.
+            bootstrapLogger?.LogDebug(
+                "Adding authentication, cookies and JWT services."
+                );
 
-            // This is who we are.
-            options.ClientId = identityOptions.ClientId; 
+            // Register the authentication services.
+            webApplicationBuilder.AddAuthenticationServices(
+                    identityOptions,
+                    bootstrapLogger
+                    );
+        }
 
-            // This is what we know.
-            options.ClientSecret = identityOptions.ClientSecret;
+        // Tell the world what we are about to do.
+        bootstrapLogger?.LogDebug(
+            "Adding authorization services."
+            );
 
-            // We want an authentication code response.
-            options.ResponseType = "code";
+        // Authorization services are a bit different than authentication,
+        //   since we still need the policies in place - even if they don't
+        //  actually do anything (like when the DeveloperBypass flag is true).
 
-            options.ResponseMode = "query";
-
-            // Don't map claims.
-            options.MapInboundClaims = false;
-
-            // Access and Refresh token stored in the authentication properties.
-            options.SaveTokens = true;
-
-            // Go to the user info endpoint for additional claims.
-            options.GetClaimsFromUserInfoEndpoint = true;
-
-            // We want these scopes, by default.
-            options.Scope.Clear();
-            options.Scope.Add("openid");
-            options.Scope.Add("profile");
-
-            // Loop and add any additional scopes.
-            foreach (var scope in identityOptions.AdditionalScopes)
-            {
-                // Ignore these, since we've already added them.
-                if (string.Compare(scope, "openid", true) == 0 ||
-                    string.Compare(scope, "profile", true) == 0 )
-                {
-                    continue;
-                }
-
-                // Add the scope.
-                options.Scope.Add(scope);
-            }
-
-            // Map role claim(s) so ASP.NET will understand them.
-            options.ClaimActions.MapJsonKey("role", "role", "role");
-
-            // Require these types for a valid token.
-            options.TokenValidationParameters = new TokenValidationParameters
-            {
-                NameClaimType = "name",
-                RoleClaimType = "role"
-            };
-
-            // Tap into the ODIC events.
-            options.Events = new OpenIdConnectEvents
-            {
-                // On access denied, we want to go back to our home page.
-                OnAccessDenied = context =>
-                {
-                    context.HandleResponse();
-                    context.Response.Redirect("/");
-                    return Task.CompletedTask;
-                }
-            };
-        }).AddJwtBearer(options =>
-        {
-            options.Authority = identityOptions.Authority;
-            options.TokenValidationParameters.ValidateAudience = false;
-        });
-
-        // Wire up the authentication and authorization services.
+        // Wire up the authorization services.
         webApplicationBuilder.Services.AddAuthorization(options =>
         {
             // Add the 'standard policy' policy.
@@ -247,6 +195,120 @@ public static class WebApplicationBuilderExtensions006
                     policy.RequireRole(RoleNameDefaults.Admin);
                 }
             });
+        });
+
+        // Return the application builder.
+        return webApplicationBuilder;
+    }
+
+    #endregion
+
+    // *******************************************************************
+    // Private methods.
+    // *******************************************************************
+
+    #region Private methods
+
+    private static WebApplicationBuilder AddAuthenticationServices(
+        this WebApplicationBuilder webApplicationBuilder,
+        IdentityOptions identityOptions,
+        ILogger? bootstrapLogger = null
+        )
+    {
+        // Tell the world what we are about to do.
+        bootstrapLogger?.LogDebug(
+            "Clearing default inbound claims mapping for identity."
+            );
+
+        // Clear default inbound claim mapping.
+        JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+
+        // Wire up the authentication, cookie, OIDC and JWT services.
+        webApplicationBuilder.Services.AddAuthentication(options =>
+        {
+            options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+            options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+        }).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+        {
+            options.Cookie.Name = identityOptions.CookieName;
+            options.Cookie.SameSite = SameSiteMode.Strict;
+        }).AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
+        {
+            // Where our identity server is.
+            options.Authority = identityOptions.Authority;
+
+            // Are we in a development environment?
+            if (webApplicationBuilder.Environment.IsDevelopment())
+            {
+                // Don't require HTTPS for meta-data
+                options.RequireHttpsMetadata = false;
+            }
+
+            // This is who we are.
+            options.ClientId = identityOptions.ClientId;
+
+            // This is what we know.
+            options.ClientSecret = identityOptions.ClientSecret;
+
+            // We want an authentication code response.
+            options.ResponseType = "code";
+
+            options.ResponseMode = "query";
+
+            // Don't map claims.
+            options.MapInboundClaims = false;
+
+            // Access and Refresh token stored in the authentication properties.
+            options.SaveTokens = true;
+
+            // Go to the user info endpoint for additional claims.
+            options.GetClaimsFromUserInfoEndpoint = true;
+
+            // We want these scopes, by default.
+            options.Scope.Clear();
+            options.Scope.Add("openid");
+            options.Scope.Add("profile");
+
+            // Loop and add any additional scopes.
+            foreach (var scope in identityOptions.AdditionalScopes)
+            {
+                // Ignore these, since we've already added them.
+                if (string.Compare(scope, "openid", true) == 0 ||
+                    string.Compare(scope, "profile", true) == 0)
+                {
+                    continue;
+                }
+
+                // Add the scope.
+                options.Scope.Add(scope);
+            }
+
+            // Map role claim(s) so ASP.NET will understand them.
+            options.ClaimActions.MapJsonKey("role", "role", "role");
+
+            // Require these types for a valid token.
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                NameClaimType = "name",
+                RoleClaimType = "role"
+            };
+
+            // Tap into the ODIC events.
+            options.Events = new OpenIdConnectEvents
+            {
+                // On access denied, we want to go back to our home page.
+                OnAccessDenied = context =>
+                {
+                    context.HandleResponse();
+                    context.Response.Redirect("/");
+                    return Task.CompletedTask;
+                }
+            };
+        }).AddJwtBearer(options =>
+        {
+            options.Authority = identityOptions.Authority;
+            options.TokenValidationParameters.ValidateAudience = false;
         });
 
         // Return the application builder.

@@ -1,0 +1,54 @@
+﻿@page "/"
+@using CG.Blazor.Identity.Options;
+@using Microsoft.Extensions.Options;
+@inject IOptions<IdentityOptions> IdentityOptions
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<br />
+
+@if (IdentityOptions.Value.DeveloperBypass)
+{
+    <p>Authentication is currently bypassed!</p>
+}
+else
+{
+    <AuthorizeView>
+        <Authorized>
+            <p>User @context.User.Identity.Name is authenticated </p>
+        </Authorized>
+    </AuthorizeView>
+
+    <AuthorizeView Policy="@(PolicyNameDefaults.SuperAdminPolicy)">
+        <Authorized>
+            <p style="color:green">SuperAdmin policy says we are authorized</p>
+        </Authorized>
+        <NotAuthorized>
+            <p style="color:orangered">SuperAdmin policy says we are NOT authorized</p>
+        </NotAuthorized>
+    </AuthorizeView>
+
+    <AuthorizeView Policy="@(PolicyNameDefaults.AdminPolicy)">
+        <Authorized>
+            <p style="color:green">Admin policy says we are authorized</p>
+        </Authorized>
+        <NotAuthorized>
+            <p style="color:orangered">Admin policy says we are NOT authorized</p>
+        </NotAuthorized>
+    </AuthorizeView>
+
+    <AuthorizeView Policy="@(PolicyNameDefaults.StandardPolicy)">
+        <Authorized>
+            <p style="color:green">Standard policy says we are authorized</p>
+        </Authorized>
+        <NotAuthorized>
+            <p style="color:orangered">Standard policy says we are NOT authorized</p>
+        </NotAuthorized>
+    </AuthorizeView>
+}
