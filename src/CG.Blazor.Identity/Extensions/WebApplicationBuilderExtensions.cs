@@ -60,6 +60,28 @@ public static class WebApplicationBuilderExtensions006
             "Adding authentication and authorization services."
             );
 
+        // Is identity bypassed?
+        if (identityOptions.DeveloperBypass)
+        {
+            // Is this a development environment?
+            if (webApplicationBuilder.Environment.IsDevelopment())
+            {
+                // Tell the world what we are about to do.
+                bootstrapLogger?.LogDebug(
+                    "Not standing up identity services because the 'DeveloperBypass' flag is true."
+                    );
+
+                return webApplicationBuilder;
+            }
+            else
+            {
+                // Tell what we didn't do.
+                bootstrapLogger?.LogDebug(
+                    "Ignoring the developer bypass because this is not a developer environment."
+                    );
+            }
+        }
+
         // Wire up the authentication, cookie, OIDC and JWT services.
         webApplicationBuilder.Services.AddAuthentication(options =>
         {
@@ -147,7 +169,6 @@ public static class WebApplicationBuilderExtensions006
             options.Authority = identityOptions.Authority;
             options.TokenValidationParameters.ValidateAudience = false;
         });
-
 
         // Wire up the authentication and authorization services.
         webApplicationBuilder.Services.AddAuthorization(options =>
