@@ -7,11 +7,13 @@
     <AuthorizeView>
         <Authorized>
             <form method="post" action="Identity/Account/Logout">
-                <button type="submit" class="nav-link btn btn-link">Log out</button>
+                <MudButton Color="Color.Inherit" ButtonType="ButtonType.Submit" Class="nav-link btn btn-link" >Log out</MudButton>
+                @*<button type="submit" class="nav-link btn btn-link">Log out</button>*@
             </form>
         </Authorized>
         <NotAuthorized>
-            <a href="Identity/Account/Login">Log in</a>
+            <MudLink Color="Color.Inherit" Href="Identity/Account/Login">Log in</MudLink>
+            @*<a href="Identity/Account/Login">Log in</a>*@
         </NotAuthorized>
     </AuthorizeView>
 }
