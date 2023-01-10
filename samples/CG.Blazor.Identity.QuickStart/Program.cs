@@ -1,6 +1,5 @@
 using CG.Blazor.Identity.QuickStart.Data;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +9,9 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 
 builder.AddServerSideIdentity();
+
+// Add MudBlazor stuff
+builder.Services.AddMudServices();
 
 var app = builder.Build();
 

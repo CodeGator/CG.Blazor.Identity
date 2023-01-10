@@ -1,11 +1,18 @@
 ﻿@page
 @using Microsoft.AspNetCore.Authentication;
+@using Microsoft.Extensions.Options;
 @attribute [IgnoreAntiforgeryToken]
+@inject IOptions<IdentityOptions> IdentityOptions
 
 @functions {
     public async Task<IActionResult> OnPost()
     {
         await HttpContext.SignOutAsync();
+
+        HttpContext.Response.Cookies.Delete(
+            IdentityOptions.Value.CookieName
+        );
+
         return Redirect("/");
     }
 }

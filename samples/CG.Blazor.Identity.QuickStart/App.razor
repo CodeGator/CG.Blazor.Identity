@@ -1,11 +1,16 @@
 ﻿@using System.Reflection;
 
 <CascadingAuthenticationState>
-    <Router AppAssembly="@typeof(App).Assembly">
+    <Router AppAssembly="@typeof(App).Assembly"
+            AdditionalAssemblies=@_additionalAssemblies>
         <Found Context="routeData">
             <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
                 <NotAuthorized>
                     @if (context.User.Identity?.IsAuthenticated != true)
+                    {
+                        <RedirectToLogin />
+                    }
+                    else
                     {
                         <p role="alert">You are not authorized to access this resource.</p>
                     }
@@ -21,3 +26,10 @@
         </NotFound>
     </Router>
 </CascadingAuthenticationState>
+
+@code {
+    public Assembly[] _additionalAssemblies = new Assembly[]
+    {
+        Assembly.Load("CG.Blazor.Identity")
+    };
+}

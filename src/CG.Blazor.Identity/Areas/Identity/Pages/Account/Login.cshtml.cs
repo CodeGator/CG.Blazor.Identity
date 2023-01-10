@@ -1,9 +1,5 @@
 
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.OpenIdConnect;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
-namespace CG.Blazor.Identity.QuickStart.Pages.Account;
+namespace CG.Blazor.Identity.Areas.Identity.Pages.Account;
 
 /// <summary>
 /// This class is the code-behind for the Login page.

@@ -1,6 +1,4 @@
 ﻿@page "/"
-@using CG.Blazor.Identity.Options;
-@using Microsoft.Extensions.Options;
 @inject IOptions<IdentityOptions> IdentityOptions
 
 <PageTitle>Index</PageTitle>
@@ -15,13 +13,13 @@ Welcome to your new app.
 
 @if (IdentityOptions.Value.DeveloperBypass)
 {
-    <p>Authentication is currently bypassed!</p>
+    <p style="color: red">Authentication is currently bypassed!</p>
 }
 else
 {
     <AuthorizeView>
         <Authorized>
-            <p>User @context.User.Identity.Name is authenticated </p>
+            <p>User @(context.User?.Identity?.Name ?? "Anonymous") is authenticated </p>
         </Authorized>
     </AuthorizeView>
 
