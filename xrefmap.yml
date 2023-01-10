@@ -7,6 +7,31 @@ references:
   commentId: N:CG.Blazor.Identity
   fullName: CG.Blazor.Identity
   nameWithType: CG.Blazor.Identity
+- uid: CG.Blazor.Identity.Areas.Identity.Pages.Account
+  name: CG.Blazor.Identity.Areas.Identity.Pages.Account
+  href: api/CG.Blazor.Identity.Areas.Identity.Pages.Account.html
+  commentId: N:CG.Blazor.Identity.Areas.Identity.Pages.Account
+  fullName: CG.Blazor.Identity.Areas.Identity.Pages.Account
+  nameWithType: CG.Blazor.Identity.Areas.Identity.Pages.Account
+- uid: CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel
+  name: LoginModel
+  href: api/CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel.html
+  commentId: T:CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel
+  fullName: CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel
+  nameWithType: LoginModel
+- uid: CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel.OnGet(System.String)
+  name: OnGet(String)
+  href: api/CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel.html#CG_Blazor_Identity_Areas_Identity_Pages_Account_LoginModel_OnGet_System_String_
+  commentId: M:CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel.OnGet(System.String)
+  fullName: CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel.OnGet(System.String)
+  nameWithType: LoginModel.OnGet(String)
+- uid: CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel.OnGet*
+  name: OnGet
+  href: api/CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel.html#CG_Blazor_Identity_Areas_Identity_Pages_Account_LoginModel_OnGet_
+  commentId: Overload:CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel.OnGet
+  isSpec: "True"
+  fullName: CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel.OnGet
+  nameWithType: LoginModel.OnGet
 - uid: CG.Blazor.Identity.Options
   name: CG.Blazor.Identity.Options
   href: api/CG.Blazor.Identity.Options.html

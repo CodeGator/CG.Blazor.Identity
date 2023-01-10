@@ -14,6 +14,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel.html",
+          "hash": "q3eHCsE41k2DKdygy1GVQy1M9j+ZmCPdr8OV9eW7PVY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.html",
+          "hash": "o2a2BodUgsObs97tUp/4FbDYKDLRr7+h80e/wy6qLP0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Blazor.Identity.Options.IdentityOptions.yml",
       "output": {
         ".html": {
@@ -102,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "LlIJxeWS4C0mFl+hsavbRSFDD9UpM/1G5krDF1SMLow="
+          "hash": "YbsS5H0k5bClmoCgXJ3omdw6fwoIPNSeBhqT2w83mUA="
         }
       },
       "is_incremental": false,
@@ -221,7 +245,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 7,
+          "total_file_count": 9,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -1,4 +1,14 @@
 {
+  "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.html": {
+    "href": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.html",
+    "title": "Namespace CG.Blazor.Identity.Areas.Identity.Pages.Account",
+    "keywords": "Namespace CG.Blazor.Identity.Areas.Identity.Pages.Account Classes LoginModel This class is the code-behind for the Login page."
+  },
+  "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel.html": {
+    "href": "api/CG.Blazor.Identity.Areas.Identity.Pages.Account.LoginModel.html",
+    "title": "Class LoginModel",
+    "keywords": "Class LoginModel This class is the code-behind for the Login page. Inheritance System.Object LoginModel Namespace : CG.Blazor.Identity.Areas.Identity.Pages.Account Assembly : CG.Blazor.Identity.dll Syntax public class LoginModel : PageModel Methods OnGet(String) This method is called when the get receives a GET request. Declaration public async Task OnGet(string redirectUri) Parameters Type Name Description System.String redirectUri The redirect uri to use for the operation. Returns Type Description Task A task to perform the operation."
+  },
   "api/CG.Blazor.Identity.html": {
     "href": "api/CG.Blazor.Identity.html",
     "title": "Namespace CG.Blazor.Identity",
