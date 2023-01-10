@@ -5,7 +5,7 @@ namespace Microsoft.AspNetCore.Builder;
 /// This class contains extension methods related to the <see cref="WebApplicationBuilder"/>
 /// type.
 /// </summary>
-public static class WebApplicationBuilderExtensions006
+public static class WebApplicationBuilderExtensions001
 {
     // *******************************************************************
     // Public methods.
@@ -232,7 +232,7 @@ public static class WebApplicationBuilderExtensions006
         }).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
         {
             options.Cookie.Name = identityOptions.CookieName;
-            options.Cookie.SameSite = SameSiteMode.Strict;
+            options.Cookie.SameSite = SameSiteMode.None;
         }).AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
         {
             // Where our identity server is.

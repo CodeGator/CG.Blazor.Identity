@@ -18,10 +18,6 @@
             );
 
         HttpContext.Response.Cookies.Delete(
-            ".AspNetCore.Identity.Application"
-            );
-
-        HttpContext.Response.Cookies.Delete(
             IdentityOptions.Value.CookieName
         );
 
