@@ -1,4 +1,6 @@
 ﻿
+using Microsoft.IdentityModel.Logging;
+
 namespace Microsoft.AspNetCore.Builder;
 
 /// <summary>
@@ -196,6 +198,18 @@ public static class WebApplicationBuilderExtensions001
                 }
             });
         });
+
+        // Is this a development environment?
+        if (webApplicationBuilder.Environment.IsDevelopment())
+        {
+            // Tell the world what we are about to do.
+            bootstrapLogger?.LogDebug(
+                "Enabling PII because this is a development environment"
+                );
+
+            // Tell IdentityServer to include PII.
+            IdentityModelEventSource.ShowPII = true;
+        }
 
         // Return the application builder.
         return webApplicationBuilder;
