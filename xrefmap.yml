@@ -170,25 +170,44 @@ references:
   commentId: N:Microsoft.AspNetCore.Builder
   fullName: Microsoft.AspNetCore.Builder
   nameWithType: Microsoft.AspNetCore.Builder
-- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006
-  name: WebApplicationBuilderExtensions006
-  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006.html
-  commentId: T:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006
-  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006
-  nameWithType: WebApplicationBuilderExtensions006
-- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006.AddServerSideIdentity(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions001
+  name: WebApplicationBuilderExtensions001
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions001.html
+  commentId: T:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions001
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions001
+  nameWithType: WebApplicationBuilderExtensions001
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions001.AddServerSideIdentity(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
   name: AddServerSideIdentity(WebApplicationBuilder, String, Nullable<ILogger>)
-  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions006_AddServerSideIdentity_Microsoft_AspNetCore_Builder_WebApplicationBuilder_System_String_System_Nullable_ILogger__
-  commentId: M:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006.AddServerSideIdentity(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions001.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions001_AddServerSideIdentity_Microsoft_AspNetCore_Builder_WebApplicationBuilder_System_String_System_Nullable_ILogger__
+  commentId: M:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions001.AddServerSideIdentity(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
   name.vb: AddServerSideIdentity(WebApplicationBuilder, String, Nullable(Of ILogger))
-  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006.AddServerSideIdentity(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable<ILogger>)
-  fullName.vb: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006.AddServerSideIdentity(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable(Of ILogger))
-  nameWithType: WebApplicationBuilderExtensions006.AddServerSideIdentity(WebApplicationBuilder, String, Nullable<ILogger>)
-  nameWithType.vb: WebApplicationBuilderExtensions006.AddServerSideIdentity(WebApplicationBuilder, String, Nullable(Of ILogger))
-- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006.AddServerSideIdentity*
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions001.AddServerSideIdentity(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable<ILogger>)
+  fullName.vb: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions001.AddServerSideIdentity(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable(Of ILogger))
+  nameWithType: WebApplicationBuilderExtensions001.AddServerSideIdentity(WebApplicationBuilder, String, Nullable<ILogger>)
+  nameWithType.vb: WebApplicationBuilderExtensions001.AddServerSideIdentity(WebApplicationBuilder, String, Nullable(Of ILogger))
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions001.AddServerSideIdentity*
   name: AddServerSideIdentity
-  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions006_AddServerSideIdentity_
-  commentId: Overload:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006.AddServerSideIdentity
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions001.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions001_AddServerSideIdentity_
+  commentId: Overload:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions001.AddServerSideIdentity
   isSpec: "True"
-  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions006.AddServerSideIdentity
-  nameWithType: WebApplicationBuilderExtensions006.AddServerSideIdentity
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions001.AddServerSideIdentity
+  nameWithType: WebApplicationBuilderExtensions001.AddServerSideIdentity
+- uid: Microsoft.AspNetCore.Builder.WebApplicationExtensions001
+  name: WebApplicationExtensions001
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationExtensions001.html
+  commentId: T:Microsoft.AspNetCore.Builder.WebApplicationExtensions001
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationExtensions001
+  nameWithType: WebApplicationExtensions001
+- uid: Microsoft.AspNetCore.Builder.WebApplicationExtensions001.UseServerSideIdentity(Microsoft.AspNetCore.Builder.WebApplication)
+  name: UseServerSideIdentity(WebApplication)
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationExtensions001.html#Microsoft_AspNetCore_Builder_WebApplicationExtensions001_UseServerSideIdentity_Microsoft_AspNetCore_Builder_WebApplication_
+  commentId: M:Microsoft.AspNetCore.Builder.WebApplicationExtensions001.UseServerSideIdentity(Microsoft.AspNetCore.Builder.WebApplication)
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationExtensions001.UseServerSideIdentity(Microsoft.AspNetCore.Builder.WebApplication)
+  nameWithType: WebApplicationExtensions001.UseServerSideIdentity(WebApplication)
+- uid: Microsoft.AspNetCore.Builder.WebApplicationExtensions001.UseServerSideIdentity*
+  name: UseServerSideIdentity
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationExtensions001.html#Microsoft_AspNetCore_Builder_WebApplicationExtensions001_UseServerSideIdentity_
+  commentId: Overload:Microsoft.AspNetCore.Builder.WebApplicationExtensions001.UseServerSideIdentity
+  isSpec: "True"
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationExtensions001.UseServerSideIdentity
+  nameWithType: WebApplicationExtensions001.UseServerSideIdentity
