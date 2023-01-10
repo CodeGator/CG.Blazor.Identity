@@ -9,6 +9,18 @@
     {
         await HttpContext.SignOutAsync();
 
+        await HttpContext.SignOutAsync(
+            CookieAuthenticationDefaults.AuthenticationScheme
+            );
+
+        await HttpContext.SignOutAsync(
+            OpenIdConnectDefaults.AuthenticationScheme
+            );
+
+        HttpContext.Response.Cookies.Delete(
+            ".AspNetCore.Identity.Application"
+            );
+
         HttpContext.Response.Cookies.Delete(
             IdentityOptions.Value.CookieName
         );
