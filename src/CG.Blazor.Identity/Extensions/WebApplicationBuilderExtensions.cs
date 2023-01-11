@@ -1,6 +1,4 @@
 ﻿
-using Microsoft.IdentityModel.Logging;
-
 namespace Microsoft.AspNetCore.Builder;
 
 /// <summary>
@@ -84,7 +82,7 @@ public static class WebApplicationBuilderExtensions001
 
                 // Tell the world what we are about to do.
                 bootstrapLogger?.LogDebug(
-                    "Adding authentication, cookies and JWT services."
+                    "Adding authentication, cookies and JWT services, for identity."
                     );
 
                 // Register the authentication services.
@@ -101,7 +99,7 @@ public static class WebApplicationBuilderExtensions001
 
             // Tell the world what we are about to do.
             bootstrapLogger?.LogDebug(
-                "Adding authentication, cookies and JWT services."
+                "Adding authentication, cookies and JWT services, for identity."
                 );
 
             // Register the authentication services.
@@ -113,7 +111,7 @@ public static class WebApplicationBuilderExtensions001
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Adding authorization services."
+            "Adding authorization services, for identity."
             );
 
         // Authorization services are a bit different than authentication,
@@ -204,7 +202,7 @@ public static class WebApplicationBuilderExtensions001
         {
             // Tell the world what we are about to do.
             bootstrapLogger?.LogDebug(
-                "Enabling PII because this is a development environment"
+                "Enabling PII, for identity, because this is a development environment"
                 );
 
             // Tell IdentityServer to include PII.
@@ -231,7 +229,7 @@ public static class WebApplicationBuilderExtensions001
     {
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Clearing default inbound claims mapping for identity."
+            "Clearing default inbound claims mapping, for identity."
             );
 
         // Clear default inbound claim mapping.

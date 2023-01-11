@@ -2,6 +2,7 @@
 global using CG.Blazor.Identity.Options;
 global using CG.Validations;
 global using Microsoft.AspNetCore.Authentication;
+global using Microsoft.IdentityModel.Logging;
 global using Microsoft.AspNetCore.Authentication.Cookies;
 global using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 global using Microsoft.AspNetCore.Http;

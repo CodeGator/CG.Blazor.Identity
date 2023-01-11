@@ -30,11 +30,16 @@ public static class WebApplicationExtensions001
 
         // Log what we are about to do.
         webApplication.Logger.LogDebug(
-            "Wiring up identity middleware."
+            "Wiring up the cookie policy, for identity."
             );
 
         // Use out cookie policy.
         webApplication.UseCookiePolicy();
+
+        // Log what we are about to do.
+        webApplication.Logger.LogDebug(
+            "Wiring up middleware, for identity."
+            );
 
         // Use the authorization middleware.
         webApplication.UseAuthorization();
